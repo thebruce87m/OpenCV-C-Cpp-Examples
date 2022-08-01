@@ -33,6 +33,9 @@ int main(){
     // Display the resulting frame
     imshow( "Frame", frame );
 
+    long stamp = cap.get( CAP_PROP_POS_MSEC);
+    std::cout << "Timestamp: " << stamp << std::endl;
+
     // Press  ESC on keyboard to exit
     char c=(char)waitKey(25);
     if(c==27)
