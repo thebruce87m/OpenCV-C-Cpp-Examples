@@ -26,6 +26,10 @@ int main(){
     if (frame.empty())
       break;
 
+
+    namedWindow("Frame", WINDOW_NORMAL);
+    cv::resizeWindow("Frame", 640, 480);
+
     // Display the resulting frame
     imshow( "Frame", frame );
 
